@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@bjornlu/svelte-router": "^0.4.1",
+    "@splidejs/splide": "^2.4.21",
     "halfmoon": "^1.1.1",
     "svelte": "^3.24.0"
   },

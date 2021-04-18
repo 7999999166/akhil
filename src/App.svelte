@@ -1,5 +1,5 @@
 <script>
-  import { RouterView, Link } from '@bjornlu/svelte-router';
+  import { RouterView } from '@bjornlu/svelte-router';
   import './nedb.min.js';
   var db = new Nedb({
     filename: 'AppData.db',
@@ -37,17 +37,24 @@ import { create_component } from 'svelte/internal';
     font-size: larger;
   }
 
-  /* .bb:hover{
-  color: rgb(0, 255, 136);
-   text-decoration: none !important;
-  
-  } */
 
   a:hover{
     text-decoration: none;
   }
-
-
+ .nav2{
+    background-color: black;
+    width: auto;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+ }
+.zz{
+  color: beige;
+  font-family: monospace;
+  font-size: larger;
+ 
+  margin-top: 38px;
+}
 
 
 </style>
@@ -55,10 +62,14 @@ import { create_component } from 'svelte/internal';
 <div class='nav w3-top'>
 <h1 class="aa"><a href="/">Home</a></h1>
 <h1 class="aa"><a href="/products">Products</a></h1>
-<h1 class="aa"><a href="/">Home</a></h1>
-<h1 class="aa"><a href="/">Home</a></h1>
+<h1 class="aa"><a href="/aboutUs">About Us</a></h1>
+<h1 class="aa"><a href="/products/7">Product 7</a></h1>
 <h1 class="aa"><a href="/">Home</a></h1>
 <h1 class="aa"><a href="/">Home</a></h1>
 </div> 
   <RouterView />
+  
+<div class='nav2'>
+<h1 class="zz"><span class="w3-center">copyright symbol © 2021</span> </h1>
+</div> 
   </div>
